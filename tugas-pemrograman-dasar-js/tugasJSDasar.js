@@ -120,7 +120,7 @@ var jariJari= "7.5";
 
 //hapus seluruh spasi dari variabel sisi ke tipe data integer menggunakan method Number lalu lakukan perhitungan luas persegi
 //var sisi= sisi.trim();
-var sisi = sisi.replace(/\s/g, '')
+var sisi = sisi[1] + sisi[3];
 var sisi = Number(sisi);
 
 console.log("Sisi = " + sisi);
