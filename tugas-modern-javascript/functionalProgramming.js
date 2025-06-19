@@ -54,7 +54,28 @@ hitungBalok(12,7,5)
 
 // TUGAS 3 ==================================
 console.log("=== TUGAS 3 ===")
+console.log("=== TUGAS 5 ===")
+var people =[
+  {name: "John", job: "Programmer", gender: "male", age: 30},
+  {name: "Sarah", job: "Model", gender: "female", age: 27},
+  {name: "Jack", job: "Engineer", gender: "male", age: 25},
+  {name: "Ellie", job: "Designer", gender: "female", age: 35},
+  {name: "Danny", job: "Footballer", gender: "male", age: 30},
+]
 
+var peopleSort = people.sort((a,b)=>{
+ return a.age-b.age;
+})
+
+console.log(peopleSort)
+
+function munculkanNama(){
+  for(i=1;i<=peopleSort.length;i++){
+   console.log(i + ". "+ peopleSort[i-1].name); 
+  }
+}
+
+munculkanNama()
 
 // TUGAS 4 ==================================
 console.log("=== TUGAS 4 ===")
