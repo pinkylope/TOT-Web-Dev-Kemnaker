@@ -116,4 +116,21 @@ console.log(angkaPalindrome(1000));
 
 // TUGAS 7 ==================================
 console.log("=== TUGAS 7 ===")
+function cekPermutasi(str1, str2) {
+  // cek string panjangnya harus sama
+  if (str1.length !== str2.length) {
+    return false;
+  }
 
+  // kalo sama baru proses
+  let sortedStr1 = str1.split('').sort().join('');
+  let sortedStr2 = str2.split('').sort().join('');
+
+  return sortedStr1 === sortedStr2;
+}
+
+// TEST CASES
+console.log(cekPermutasi("abah", "baha")) // true
+console.log(cekPermutasi("ondel", "delon")) // true
+console.log(cekPermutasi("paul sernine", "arsene lupin")) // true
+console.log(cekPermutasi("taco", "taca")) // false
