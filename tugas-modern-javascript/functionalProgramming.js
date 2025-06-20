@@ -79,3 +79,26 @@ munculkanNama()
 
 // TUGAS 4 ==================================
 console.log("=== TUGAS 4 ===")
+var phones=[
+  {name: "Samsung Galaxy A52", brand: "Samsung", year: 2021, colors: ["black", "white"]},
+  {name: "Redmi Note 10 Pro", brand: "Xiaomi", year: 2021, colors: ["white", "blue"]},
+  {name: "Redmi Note 9 Pro", brand: "Xiaomi", year: 2020, colors: ["white", "blue", "black"]},
+  {name: "Iphone 12", brand: "Apple", year: 2020, colors: ["silver", "gold"]},
+  {name: "Iphone 11", brand: "Apple", year: 2019, colors: ["gold", "black", "silver"]},
+]
+
+var phonesSort = phones.sort((a,b)=>{
+ return a.year-b.year;
+})
+
+//console.log(phonesSort)
+
+function munculkanData(){
+  for(i=1;i<=phonesSort.length;i++){
+    if(phonesSort[i-1].colors.includes('black')){
+     console.log(i + ". "+ phonesSort[i-1].name + ", colors available : " + phonesSort[i-1].colors); 
+    }
+  }
+}
+
+munculkanData();
