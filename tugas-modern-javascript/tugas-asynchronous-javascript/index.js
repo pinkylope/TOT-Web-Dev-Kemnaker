@@ -9,6 +9,24 @@ var books = [
 ]
  
 // Tulis code untuk memanggil function readBooks di sini
-readBooks(10000,books[0]);
+// const execute = (time, items)=>{
+//     readBooks(time, items[0], (remainingTime)=>{
+//         items.shift()
+//         console.log(remainingTime)
+//         if(items.length > 0){
+//             execute(remainingTime, items)
+//         }
+//     })
+// }
 
-//callback untuk mendapat sisa waktu
+// execute(10000, books)
+
+function execute(time, index) {
+    if (index < books.length) {
+        readBooks(time, books[index], function(sisaWaktu) {
+            execute(sisaWaktu, index + 1)
+        })
+    }
+}
+
+execute(10000, 0)

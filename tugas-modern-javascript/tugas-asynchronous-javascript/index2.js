@@ -7,3 +7,14 @@ var books = [
 ]
  
 // Lanjutkan code untuk menjalankan function readBooksPromise 
+const execute = (time, items) =>{
+    readBooksPromise(time,items[0]).then((res)=>{
+        items.shift()
+        if(items.length> 0){
+            execute(res, items)
+        }
+    }).catch((err)=>{
+        console.log("waktu habis");
+    })
+}
+execute(10000, books)
