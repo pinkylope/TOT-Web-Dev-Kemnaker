@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: lightgrey;
+}
+
+/* Buatlah styling section top dibawah ini */
+.top {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: lightgrey;
+}
+
+/* Buatlah styling section container dan card dibawah ini */
+/* 1 card*/
+.container{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+/* Aturlah breakpoint dibawah ini menggunakan media queries agar responsive */

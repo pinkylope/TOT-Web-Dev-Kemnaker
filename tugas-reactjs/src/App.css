@@ -1,0 +1,33 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  /* text-align: center; */
+}
+
+.box{
+  width: 400px;
+  height: 500px;
+  background-color: white;
+  margin: 50px auto;
+  padding: 15px 15px 15px 15px;
+  box-shadow: 0px 10px 30px -10px blue;
+  align-items: center;
+  justify-content: center;
+}
+
+.tombol{
+  background:#3acdf1;
+  color:white;
+  padding:10px 20px;
+  text-decoration:none;
+  font-family:sans-serif;
+  font-size:11pt;
+  display: block;
+  text-align: center;
+}
+
+.tombol:hover {
+   background-color: darkred;
+   color: whitesmoke;
+}
